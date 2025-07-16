@@ -9,6 +9,7 @@ mv Multi-Map-Navigation/* Multi-Map-Navigation/.[!.]* src/
 rm -rf Multi-Map-Navigation
 colcon build
 ```
+(ignore any warnings)
 ## Launch Sequence
 Make a new file, mycommands/sh, in the multi_nav directory. Copy and paste these commands in a file and make it executable using(required once): chmod +x mycommands  
 Now run the commands from 1 to 4 in a single terminal using ./mycommands
