@@ -76,6 +76,7 @@ source install/setup.bash
 ros2 run multi_map_manager multi_map_manager_node
 ```
 ## Example 
+This command is to give the desired command to go to the pose (0,0,0), which is in room2, and the current location of the robot is in room1. The robot should go to the wormhole and switch the map automatically, which can be visualised in the rviz. 
 ```bash
 source install/setup.bash
 ros2 action send_goal /multi_map_navigate multi_map_manager/action/MultiMapNavigate "{target_map: 'room2', target_pose: {header: {frame_id: 'map'}, pose: {position: {x: 0.0, y: 0.0, z: 0.0}, orientation: {w: 1.0}}}}"
