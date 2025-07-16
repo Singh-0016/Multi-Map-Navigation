@@ -40,7 +40,7 @@ ros2 run wormhole_ser wormhole_service
 source install/setup.bash
 ros2 run multi_map_manager multi_map_manager_node
 ```
-Run 1 to 4 commands in a single terminal:
+Make a new file, mycommands/sh, in the multi_nav directory. Copy and paste these commands in a file and make it executable using(required once): chmod +x mycommands 
 ```bash
 trap "pkill -f ros2; pkill -f gazebo; exit" SIGINT SIGTERM
 source install/setup.bash
