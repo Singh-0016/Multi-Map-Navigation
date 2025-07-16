@@ -1,0 +1,9 @@
+string from_room
+string to_room
+---
+geometry_msgs/PoseStamped entry_pose
+float64 exit_x
+float64 exit_y
+float64 exit_yaw
+bool success
+

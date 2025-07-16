@@ -1,0 +1,28 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "postgres",
+            "database": "my_events",
+            "username": "postgres",
+            "password": "postgres"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "sql",
+            "database": "wormhole_loc",
+            "username": "root",
+            "password": "root"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+# Goal
+string target_map
+geometry_msgs/PoseStamped target_pose
+---
+# Result
+bool success
+string message
+---
+# Feedback
+string phase
