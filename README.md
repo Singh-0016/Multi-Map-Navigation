@@ -14,10 +14,9 @@ colcon build
 Make a new file, mycommands/sh, in the multi_nav directory. 
 ```bash
 touch mycommands.sh
-chmod +x mycommands
 nano mycommands
 ```
-Copy and paste these commands. Now run the commands from 1 to 4 in a single terminal using ./mycommands
+Copy and paste these commands. 
 ```bash
 trap "pkill -f ros2; pkill -f gazebo; exit" SIGINT SIGTERM
 source install/setup.bash
@@ -39,7 +38,12 @@ sleep 8
 source install/setup.bash
 ros2 run nav_server nav_server_node
 ```
-Run 5 and 6 each in new terminal.
+Write, save, and exit. Make the file executable:
+```bash
+chmod +x mycommands
+```
+Now run the commands from 1 to 4 in a single terminal using ./mycommands  
+Run 5 and 6 each in a new terminal.
 
 1. Launch facility with three rooms in the Gazebo
 ```bash
