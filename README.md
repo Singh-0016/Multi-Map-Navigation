@@ -35,7 +35,7 @@ ros2 run nav_server nav_server_node
 source install/setup.bash
 ros2 run wormhole_ser wormhole_service
 ```
-7. Run Multi-Map Manager Node
+6. Run Multi-Map Manager Node
 ```bash
 source install/setup.bash
 ros2 run multi_map_manager multi_map_manager_node
