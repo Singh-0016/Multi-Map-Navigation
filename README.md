@@ -77,4 +77,5 @@ ros2 run multi_map_manager multi_map_manager_node
 ```
 ## Example 
 ```bash
+source install/setup.bash
 ros2 action send_goal /multi_map_navigate multi_map_manager/action/MultiMapNavigate "{target_map: 'room2', target_pose: {header: {frame_id: 'map'}, pose: {position: {x: 0.0, y: 0.0, z: 0.0}, orientation: {w: 1.0}}}}"
