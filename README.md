@@ -31,7 +31,7 @@ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py x_pose:=-6.0 y_pose:=0.
 sleep 5
 
 export TURTLEBOT3_MODEL=burger
-ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=$(pwd)/src/maps/room2_map.yaml &
+ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=$(pwd)/src/maps/room1_map.yaml &
 
 sleep 8
 
