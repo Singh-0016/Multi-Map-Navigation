@@ -8,7 +8,38 @@ git clone https://github.com/Singh-0016/Multi-Map-Navigation.git
 mv Multi-Map-Navigation/* Multi-Map-Navigation/.[!.]* src/
 rm -rf Multi-Map-Navigation
 colcon build
-
+```
+## Launch Sequence 
+1. Launch facility with three rooms in the Gazebo
 ```bash
-
-### **6. Usage**
+export TURTLEBOT3_MODEL=burger
+ros2 launch gazebo_ros gazebo.launch.py world:=$(pwd)/src/experiment_rooms/worlds/room2/world.model
+```
+2. Launch Turtlebot
+```bash
+export TURTLEBOT3_MODEL = burger
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py x_pose := -6.0 y_pose :=0.0 z_pose :=0.0
+```
+3. Launch Navigation and Map Server(Nav2)
+```bash
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=$(pwd)/src/maps/room1_map.yaml
+```
+4. Run custom nav_server
+```bash
+source install/setup.bash
+ros2 run nav_server nav_server_node
+```
+5. Run Wormhole Service
+```bash
+source install/setup.bash
+ros2 run wormhole_ser wormhole_service
+```
+7. Run Multi-Map Manager Node
+```bash
+source install/setup.bash
+ros2 run multi_map_manager multi_map_manager_node
+```
+## Example 
+```bash
+ros2 action send_goal /multi_map_navigate multi_map_manager/action/MultiMapNavigate "{target_map: 'room2', target_pose: {header: {frame_id: 'map'}, pose: {position: {x: 0.0, y: 0.0, z: 0.0}, orientation: {w: 1.0}}}}"
