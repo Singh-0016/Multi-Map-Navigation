@@ -88,4 +88,5 @@ sudo apt install ros-humble-desktop ros-humble-nav2-bringup ros-humble-gazebo-ro
 sudo apt install mysql-server
 sudo apt install ros-humble-gazebo-ros-pkgs
 sudo apt install ros-humble-rviz2
+sudo apt install ros-humble-turtlebot3-gazebo ros-humble-turtlebot3-navigation2
 ```
