@@ -11,8 +11,13 @@ colcon build
 ```
 (ignore any warnings)
 ## Launch Sequence
-Make a new file, mycommands/sh, in the multi_nav directory. Copy and paste these commands in a file and make it executable using(required once): chmod +x mycommands  
-Now run the commands from 1 to 4 in a single terminal using ./mycommands
+Make a new file, mycommands/sh, in the multi_nav directory. 
+```bash
+touch mycommands.sh
+chmod +x mycommands
+nano mycommands
+```
+Copy and paste these commands. Now run the commands from 1 to 4 in a single terminal using ./mycommands
 ```bash
 trap "pkill -f ros2; pkill -f gazebo; exit" SIGINT SIGTERM
 source install/setup.bash
