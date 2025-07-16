@@ -80,3 +80,12 @@ This command is to give the desired command to go to the pose (0,0,0), which is 
 ```bash
 source install/setup.bash
 ros2 action send_goal /multi_map_navigate multi_map_manager/action/MultiMapNavigate "{target_map: 'room2', target_pose: {header: {frame_id: 'map'}, pose: {position: {x: 0.0, y: 0.0, z: 0.0}, orientation: {w: 1.0}}}}"
+```
+## Some requirements
+```bash
+pip install mysql-connector-python
+sudo apt install ros-humble-desktop ros-humble-nav2-bringup ros-humble-gazebo-ros-pkgs
+sudo apt install mysql-server
+sudo apt install ros-humble-gazebo-ros-pkgs
+sudo apt install ros-humble-rviz2
+```
