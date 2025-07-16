@@ -17,8 +17,8 @@ ros2 launch gazebo_ros gazebo.launch.py world:=$(pwd)/src/experiment_rooms/world
 ```
 2. Launch Turtlebot
 ```bash
-export TURTLEBOT3_MODEL = burger
-ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py x_pose := -6.0 y_pose :=0.0 z_pose :=0.0
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py x_pose:=-6.0 y_pose:=0.0 z_pose:=0.0
 ```
 3. Launch Navigation and Map Server(Nav2)
 ```bash
