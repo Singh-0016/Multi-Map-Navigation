@@ -1,6 +1,6 @@
 ## Required Changes
 <img width="1100" height="888" alt="image" src="https://github.com/user-attachments/assets/21e2cca4-efc8-4790-8fb4-f589cd580d33" />
-Change the file paths accordingly. Change Ubuntu-desk with your username
+Change the file paths accordingly. Change ubuntu-desk with your username
 
 
 ## Installation(ROS2 Humble + Gazebo 11)
