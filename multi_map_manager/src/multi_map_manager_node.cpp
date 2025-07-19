@@ -37,9 +37,9 @@ public:
         initialpose_pub_ = this->create_publisher<geometry_msgs::msg::PoseWithCovarianceStamped>("/initialpose", 1);
 
         // === Update these with your actual map file paths ===
-        map_yaml_["room1"] = "/home/ubuntu-desk/ansr_rob/src/maps/room1_map.yaml";
-        map_yaml_["room2"] = "/home/ubuntu-desk/ansr_rob/src/maps/room2_map.yaml";
-        map_yaml_["room3"] = "/home/ubuntu-desk/ansr_rob/src/maps/room3_map.yaml";
+        map_yaml_["room1"] = "/home/ubuntu-desk/multi_nav/src/maps/room1_map.yaml";
+        map_yaml_["room2"] = "/home/ubuntu-desk/multi_nav/src/maps/room2_map.yaml";
+        map_yaml_["room3"] = "/home/ubuntu-desk/multi_nav/src/maps/room3_map.yaml";
         // ================================================
 
         current_map_ = "room1";  // Start map
